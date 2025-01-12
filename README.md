@@ -15,14 +15,14 @@ A Geospatial Query System built with NestJS and MongoDB
 
 1. Clone the repository:
 
-   ```sh
+   ```bash
    git clone https://github.com/sarcasterXO/geospatial-query-system.git
    cd geospatial-query-system
    ```
 
 2. Install dependencies:
 
-   ```sh
+   ```bash
    npm install
    # or
    bun install
@@ -34,7 +34,7 @@ A Geospatial Query System built with NestJS and MongoDB
 
 3. Copy the example environment file and configure it as needed:
 
-   ```sh
+   ```bash
    cp .env.example .env
    ```
 
@@ -42,10 +42,10 @@ A Geospatial Query System built with NestJS and MongoDB
 
 To seed the database with initial data, run the following command:
 
-```sh
-   node ./scripts/seedData.mjs
-    # or
-   bun run ./scripts/seedData.mjs
+```bash
+node ./scripts/seedData.mjs
+# or
+bun run ./scripts/seedData.mjs
 ```
 
 ## Running the Application
@@ -54,7 +54,7 @@ To seed the database with initial data, run the following command:
 
 To start the application in development mode with hot-reloading:
 
-```sh
+```bash
 npm run dev
 # or
 bun dev
@@ -68,7 +68,7 @@ pnpm run dev
 
 To build and start the application in production mode:
 
-```sh
+```bash
 npm run build
 npm run start
 # or
@@ -88,7 +88,7 @@ pnpm run start
 
 To run the unit tests:
 
-```sh
+```bash
 npm run test
 # or
 bun run test
@@ -103,7 +103,7 @@ pnpm run test
 
 To run the end-to-end tests:
 
-```sh
+```bash
 npm run test:e2e
 # or
 bun run test:e2e

@@ -60,8 +60,8 @@ export class CityController {
 		description: 'Document updated successfully',
 		example: { success: true },
 	})
-	@ApiResponse({ status: 400, description: 'Location outside city boundary', example: { success: false } })
-	@ApiResponse({ status: 404, description: 'Document not found', example: { success: true } })
+	@ApiResponse({ status: 400, description: 'Location outside city boundary' })
+	@ApiResponse({ status: 404, description: 'Document not found' })
 	async updateDocumentInCity(@Body() updateDocumentDto: UpdateDocumentDto) {
 		return this.cityService.updateDocumentInCity(updateDocumentDto);
 	}
@@ -73,7 +73,7 @@ export class CityController {
 		status: 200,
 		example: { success: true },
 	})
-	@ApiResponse({ status: 400, description: 'Location outside city boundary', example: { success: false } })
+	@ApiResponse({ status: 400, description: 'Location outside city boundary' })
 	async deleteDocumentInCity(@Body() deleteDocumentDto: DeleteDocumentDto): Promise<{ success: boolean }> {
 		return this.cityService.deleteDocumentInCity(deleteDocumentDto);
 	}
