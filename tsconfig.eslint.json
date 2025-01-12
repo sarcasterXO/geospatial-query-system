@@ -1,0 +1,8 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"emitDecoratorMetadata": true,
+		"noEmit": true
+	},
+	"include": ["src", "tests", "process-env.d.ts", "eslint.config.mjs", "**/*.ts", "**/*.mjs"]
+}
